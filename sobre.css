@@ -14,9 +14,14 @@ body {
 header {
   display: flex;
   justify-content: space-around;
-  height: 80px;
+  height: 100px;
   width: 100vw;
   margin: 0 auto;
+  background-color: crimson;
+}
+
+.red {
+  color: crimson !important;
 }
 
 .logo {
@@ -111,19 +116,21 @@ nav ul {
     gap: 4rem;
   }
   .item-nav-1 a:hover {
-    color: crimson !important;
+    color: #000 !important;
   }
   .item-nav-2 a:hover {
-    color: crimson !important;
+    color: #000 !important;
   }
   .item-nav-3 a:hover {
-    color: crimson;
+    color: #000;
   }
   .logo a:hover {
     cursor: pointer;
   }
   .nav-item a {
-    color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
   }
 }
 
@@ -148,7 +155,7 @@ nav ul {
   .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #000;
+    background: #fff;
     margin: 8px;
     transition: 0.3s;
   }
@@ -156,12 +163,12 @@ nav ul {
   
   .list-nav {
     position: absolute;
-    top: 8vh;
+    top: 10vh;
     left: 0;
     right: -10px;
     width: 100vw;
     height: 90vh;
-    background: #000;
+    background: crimson;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;

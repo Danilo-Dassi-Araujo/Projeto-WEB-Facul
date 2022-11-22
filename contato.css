@@ -17,9 +17,10 @@ body {
 header {
   display: flex;
   justify-content: space-around;
-  height: 80px;
-  width: 99vw;
+  height: 100px;
+  width: 100vw;
   margin: 0 auto;
+  background-color: crimson;
 }
 
 textarea,
@@ -27,6 +28,9 @@ select,
 input:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
+}
+.red {
+  color: crimson !important;
 }
 
 .logo {
@@ -120,21 +124,26 @@ nav ul {
 
 .field input {
   padding: 0.5rem;
+  border-bottom: 1px solid crimson;
+}
+.field select {
+  color: crimson;
+  border-bottom: 1px solid crimson;
 }
 
 button {
   background-color: #fff;
   color: #000;
-  border: 1px solid #000;
+  border: 1px solid crimson;
   padding: 1rem;
 }
 button:hover {
   background-color: #000;
-  color: #fff;
+  color: #fff !important;
 }
 
 textarea {
-  border: 1px solid #000;
+  border: 1px solid crimson;
   resize: none;
   width: 100%;
   height: 6rem;
@@ -150,19 +159,21 @@ textarea {
     gap: 4rem;
   }
   .item-nav-1 a:hover {
-    color: crimson !important;
+    color: #000 !important;
   }
   .item-nav-2 a:hover {
-    color: crimson !important;
+    color: #000 !important;
   }
   .item-nav-3 a:hover {
-    color: crimson;
+    color: #000;
   }
   .logo a:hover {
     cursor: pointer;
   }
   .nav-item a {
-    color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
   }
   #dialogoverlay{
     display: none;
@@ -177,17 +188,17 @@ textarea {
   #dialogbox{
     display: none;
     position: fixed;
-    background: #000;
+    background: crimson;
     border-radius:7px; 
     width:550px;
     z-index: 10;
   }
-  #dialogbox > div{ background:#FFF; margin:8px; }
-  #dialogbox > div > #dialogboxhead{ background: #000; padding:10px; color:#fff; display: flex; justify-content: center; font-size: 32px; }
-  #dialogbox > div > #dialogboxbody{ background:#000; padding:20px; color:#FFF; display: flex; justify-content: center; font-size: 24px; }
-  #dialogbox > div > #dialogboxfoot{ background: #000; padding:20px; text-align:center;}
-  #dialogbox > div > #dialogboxfoot button { background: #fff; width: 100%;}
-  #dialogbox > div > #dialogboxfoot button:hover{ background: red; text-align:center; cursor: pointer;}
+  #dialogbox > div{ background:#000; margin:8px; }
+  #dialogbox > div > #dialogboxhead{ background: crimson; padding:10px; color:#fff; display: flex; justify-content: center; font-size: 32px; }
+  #dialogbox > div > #dialogboxbody{ background:crimson; padding:20px; color:#FFF; display: flex; justify-content: center; font-size: 24px; }
+  #dialogbox > div > #dialogboxfoot{ background: crimson; padding:20px; text-align:center;}
+  #dialogbox > div > #dialogboxfoot button { background: #000;color:#fff; width: 100%;}
+  #dialogbox > div > #dialogboxfoot button:hover{ background: crimson; border: 1px solid #000; text-align:center; cursor: pointer;}
 
 }
 
@@ -211,7 +222,7 @@ textarea {
   .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #000;
+    background: #fff;
     margin: 8px;
     transition: 0.3s;
   }
@@ -219,12 +230,12 @@ textarea {
   
   .list-nav {
     position: absolute;
-    top: 8vh;
+    top: 10vh;
     left: 0;
     right: -10px;
     width: 100vw;
     height: 90vh;
-    background: #000;
+    background: crimson;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -264,7 +275,7 @@ textarea {
   
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
-  }
+  } 
   
   #dialogoverlay{
     display: none;
@@ -279,18 +290,18 @@ textarea {
   #dialogbox{
     display: none;
     position: fixed;
-    background: #000;
+    background: crimson;
     border-radius:7px; 
     width:70vw;
     z-index: 10;
     left: 60px !important;
   }
-  #dialogbox > div{ background:#FFF; margin:8px; }
-  #dialogbox > div > #dialogboxhead{ background: #000; padding:10px; color:#fff; display: flex; justify-content: center; font-size: 32px; }
-  #dialogbox > div > #dialogboxbody{ background:#000; padding:20px; color:#FFF; display: flex; justify-content: center; font-size: 24px; }
-  #dialogbox > div > #dialogboxfoot{ background: #000; padding:20px; text-align:center;}
-  #dialogbox > div > #dialogboxfoot button { background: #fff; width: 100%;}
-  #dialogbox > div > #dialogboxfoot button:hover{ background: red; text-align:center; cursor: pointer;}
+  #dialogbox > div{ background:#000; margin:8px; }
+  #dialogbox > div > #dialogboxhead{ background: crimson; padding:10px; color:#fff; display: flex; justify-content: center; font-size: 32px; }
+  #dialogbox > div > #dialogboxbody{ background:crimson; padding:20px; color:#FFF; display: flex; justify-content: center; font-size: 24px; }
+  #dialogbox > div > #dialogboxfoot{ background: crimson; padding:20px; text-align:center;}
+  #dialogbox > div > #dialogboxfoot button { background: #000;color:#fff; width: 100%;}
+  #dialogbox > div > #dialogboxfoot button:hover{ background: #fff;color: #000; text-align:center; cursor: pointer;}
   
 }
 /* MENU HAMBURGUER  */
